@@ -1,4 +1,4 @@
-# ☕ Pterodactyl Entrypoint with Hibernate Plugin (Multi-JDK)
+# ☕ Pterodactyl Docker Images with Hibernate Plugin (Multi-JDK)
 
 A set of `Docker Image` scripts for different Java versions to auto-install the **Hibernate plugin** inside Docker-based Minecraft servers — designed specifically for **Pterodactyl** hosting environments.
 
@@ -19,7 +19,7 @@ This repository provides tailored `Dcoker images` scripts that automatically ins
 
 ## 🧩 Integration (Pterodactyl)
 
-Plug the correct `Docker Image` into your **custom egg**, depending on the JDK version:
+Plug the `Docker Images` into your **Egg**:
 
 - Use for **JDK 8, 11, 17**:  
   Installs **legacy Hibernate plugin**
