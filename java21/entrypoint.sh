@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TZ=${TZ:-Asia/Kolkata}
+TZ=${TZ:-UTC}
 export TZ
 
 INTERNAL_IP=$(ip route get 1 | awk '{print $(NF-2);exit}')
