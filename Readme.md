@@ -36,3 +36,22 @@ This repository provides minimal, fast, and customizable `entrypoint.sh` scripts
 The script uses:
 ```bash
 unzip -p server.jar version.json | grep -oP '"name"\s*:\s*"\K[^"]+'
+
+## 🧩 Integration (Pterodactyl)
+Plug the correct `entrypoint.sh` into your custom egg:
+
+- Use `jdk8`, `jdk11`, or `jdk17` versions for simple legacy setups.
+- Use `jdk21` version for SkyCastle-like advanced servers.
+
+## 📜 License
+MIT License
+
+## 🤝 Contribute
+- Found a bug? Submit an issue.
+- Want to improve logic? Open a PR.
+- Have plugin automation ideas? Let’s collaborate!
+
+## 🧊 Maintained by
+**KrArjan** — [@KrArjan](https://github.com/KrArjan)
+🌌 JDK 21 Version specially made for **SkyCastle Project**
+

@@ -1,0 +1,17 @@
+
+# Determine plugin to install
+INSTALL_FREEZEHIBERNATE=false
+if echo "${MC_VERSION}" | grep -qE '^1\.21'; then
+    INSTALL_FREEZEHIBERNATE=true
+elif [ "${JAVA_VERSION}" = "21" ]; then
+    INSTALL_FREEZEHIBERNATE=true
+fi
+
+mkdir -p plugins
+if [ "${INSTALL_FREEZEHIBERNATE}" = "true" ]; then
+    echo -e "Installing FreezeHibernate plugin..."
+    curl -o plugins/DO-NOT-REMOVE.jar -L "https://raw.githubusercontent.com/KrArjan/DockerImages/main/HibernatePlugins/FreezeHibernate-1.0.jar"
+else
+    echo -e "Installing Hibernate plugin..."
+    curl -o plugins/DO-NOT-REMOVE.jar -L "https://raw.githubusercontent.com/KrArjan/DockerImages/main/HibernatePlugins/Hibernate-2.1.0.jar"
+fi
